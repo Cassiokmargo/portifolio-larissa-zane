@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('styles/header.css');
+
+@font-face {
+    font-family: 'Nexa';
+    src: url('assets/font/Nexa-Trial-Bold.ttf') format('truetype');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {    
+    --cor-main: #D0A6B5;
+    --cor-background: #FFFFFF;
+    --cor-fonte-main: #2E1B2B;
+
+    --ff-card-nome: "Nexa", sans-serif;
+    --ff-titulo: "Works Sans", sans-serif;
+    --ff-texto: "Inter", sans-serif;
+
+    --fw-titulo: 600;
+    --fw-texto: 400; 
+
+    --fs-titulo: 24px;
+    --fs-texto: 17px;
+    --fs-header: 16px;
+
+}
+
+body {
+    background-color: var(--cor-background);
+    
+}

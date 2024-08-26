@@ -1,0 +1,23 @@
+.secao__projetos{
+    display: flex;
+    justify-content: center;
+}
+
+.titulo__projetos {
+    display: flex;
+    justify-content: center;
+    padding: 80px 0 1.5em;
+
+    font-family: var(--ff-titulo);
+    font-weight: var(--fw-titulo);
+    font-size: var(--fs-titulo);
+}
+
+.container__img {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2.5em;
+    width: 70%; 
+    margin: 0 15% 0;
+}
