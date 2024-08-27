@@ -33,12 +33,8 @@
     }
 }
 
-.subtexto{
-    margin-left: 60px;
-}
 
-
-@media screen and (min-width: 430px) {
+@media screen and (max-width: 768px) {
     .secao__sobre {
         width: 90%; 
         max-width: 1000px;      
@@ -55,10 +51,3 @@
     }
 }
 
-@media screen and (min-width: 1024px) {
-  
-
-    .subtexto{
-        padding-left: 26%;
-    }
-}
