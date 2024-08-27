@@ -24,25 +24,32 @@
     font-family: var(--ff-texto);
     font-weight: var(--fw-texto);
     font-size: var(--fs-texto);
-    margin: 0.5em;
+    margin: 0.5em; 
+        
+   
+}
+
+.ancora {
     
-    span {
-        font-weight: var(--fw-titulo);
-        font-style: italic;
-        padding: 0px 0.3em;        
-    }
+    margin: 0 0.4em;
+    text-decoration: none;     
+    color: var(--cor-fonte-main);
+    font-weight: var(--fw-titulo);
+    font-style: italic; 
 }
 
 
 @media screen and (max-width: 768px) {
     .secao__sobre {
-        width: 90%; 
-        max-width: 1000px;      
+        width: 90%;
+        display: flex;
+             
         
     }
 
-    .texto__sobre {
-        display: block;
+    .ancora {
+        margin: -0.5em 1px; 
+        
         
     }
 

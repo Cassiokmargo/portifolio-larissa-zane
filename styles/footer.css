@@ -51,7 +51,9 @@
 .texto__rodape__final {
     display: flex;
     justify-content: center;
+    text-decoration: none;
 
+    color: var(--cor-fonte-main);
     font-family: var(--ff-texto);
     font-weight: var(--fw-titulo);
     font-size: var(--fs-texto);
