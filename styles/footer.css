@@ -74,7 +74,14 @@
     }
 
     .subtitulo {
-        width: 85%;
-        
+        width: 85%;        
+    }
+
+    .texto__rodape__final {
+        padding-top: 2em;
+    }
+
+    .ancora {
+        padding: 8px;
     }
 }
