@@ -80,10 +80,13 @@
     }
 
     .texto__rodape__final {
+        margin-bottom: 1em;
         padding-top: 2em;
     }
 
-    .ancora {
-        padding: 8px;
+    .ancora {    
+        outline: none;  
+        -webkit-tap-highlight-color: transparent;    
+        padding: 8px;        
     }
 }

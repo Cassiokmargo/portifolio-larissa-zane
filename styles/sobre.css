@@ -49,6 +49,8 @@
 
     .ancora {
         margin: -0.5em 1px; 
+        outline: none;  
+        -webkit-tap-highlight-color: transparent; 
         
         
     }
