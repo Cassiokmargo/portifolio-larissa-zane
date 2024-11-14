@@ -90,8 +90,33 @@ header {
 
 @media screen and (max-width: 768px) {
     .card__nome {
-        margin-left: 7em;
+        margin-left: 7em;   
         
+    }    
+
+}
+
+@media screen and (max-width: 430px) {
+    .card__nome {
+        margin-left: 8em;   
         
+    }    
+
+    .card__menu_link {
+        display: none;
     }
+
+}
+
+
+@media screen and (max-width: 375px) {
+    .card__nome {
+        margin-left: 7em;   
+        
+    }    
+
+    .card__menu_link {
+        display: none;
+    }
+
 }

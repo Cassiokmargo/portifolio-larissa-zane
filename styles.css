@@ -13,6 +13,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 :root {    
     --cor-main: #D0A6B5;
     --cor-background: #FFFFFF;
