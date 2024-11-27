@@ -38,6 +38,9 @@
     font-style: italic; 
 }
 
+.ancora:hover {
+    color: var(--cor-main);
+}
 
 @media screen and (max-width: 768px) {
     .secao__sobre {

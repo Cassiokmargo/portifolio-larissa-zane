@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="styles/projects.css">
     <link rel="stylesheet" href="styles/publications.css">
     <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/modal.css">
 
     <title>Larissa Zanetti</title>
 </head>
@@ -44,7 +45,7 @@
             and <a class="texto__sobre ancora" href="https://www.behance.net/larissazanetti">Behance</a> 
         </p>
     </section>
-
+    <!-- Seção Projects -->
     <section class="secao__projetos" id="projects">
         <div class="container__projetos">
             <h2 class="titulo__projetos">PROJECTS</h2>
@@ -59,16 +60,45 @@
             </div>
         </div>
     </section>
+
+    <!-- Seção Publications -->
     <section class="secao__publications" id="publications">
         <div class="container__publications">
             <h2 class="titulo__projetos">PUBLICATIONS</h2>
             <div class="container__img">
-                <img class="projetos__img" src="assets/img/publications/Ilustras matemática.svg" alt="image do projeto Ilustras">
-                <img class="projetos__img" src="assets/img/publications/Jataí.svg" alt="image do projeto Jataí">
-                <img class="projetos__img" src="assets/img/publications/Acessibilidade.svg" alt="image do projeto Acessibilidade">                
+                <img class="projetos__img publications__img" 
+                    src="assets/img/publications/Ilustras matemática.svg" 
+                    alt="image do projeto Ilustras"
+                    data-description="Here are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.<br><br> If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. <br><br>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary.">
+                
+                <img class="projetos__img publications__img"
+                    src="assets/img/publications/Jataí.svg"
+                    alt="image do projeto Jataí"
+                    data-description="‘‘Jataí’’ is a published comic book, illustrated by me, about a species of bee native to Brazil. <br><br> This is a project created to teach children about our country's biodiversity and the importance of preserving local fauna. <br><br> The comic is available for free <span><a href='#'>here</a></span>.">                
+                
+                <img class="projetos__img publications__img" 
+                    src="assets/img/publications/Acessibilidade.svg" 
+                    alt="image do projeto Acessibilidade"
+                    data-description="The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. <br><br> Sections 1.10.32 and 1.10.33 from de Finibus Bonorum et Malorum by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.">                
             </div>
         </div>
     </section>
+    <!-- Modal para exibir imagem maior -->
+    <div id="imageModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="modalImage" class="modal-img" src="" alt="Imagem ampliada">
+            <div id="modalDescription" class="modal-description"></div>
+        </div>
+    </div> 
+    <!-- <div id="imageModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="modalImage" class="modal-img" src="" alt="Imagem ampliada">
+            <div id="modalDescription" class="modal-description"></div>
+        </div>
+    </div>    -->
+    
     <footer class="rodape" id="contact">
         <div class="contato-bg">
             <h2 class="titulo__rodape">CONTACT</h2>        
@@ -83,5 +113,6 @@
         </div>
     </footer>
     <script src="./javascript/script.js"></script>
+    <script src="./javascript/modal.js"></script>
 </body>
 </html>

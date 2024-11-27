@@ -41,9 +41,10 @@ header {
     color: var(--cor-fonte-main);
     
 }
+
+/* Idioma menu */
 .card__nome_link:hover{
-    background: var(--cor-main);  
-    
+    background: var(--cor-main);      
     border-radius: 4px;
 }
 
