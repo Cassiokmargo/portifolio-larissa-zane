@@ -23,6 +23,16 @@ document.addEventListener("DOMContentLoaded", function () {
         } else {
             modal.classList.add("modal-projects");
         }
+        
+        // Travando a navegação dentro do modal quando ele estiver aberto
+        // Adiciona classe para desabilitar scroll com modal aberto
+        document.body.classList.add("modal-open");
+    }
+
+    // Remover class modal-open do body quando fechar modal
+    function closeModal() {
+        modal.style.display = "none";
+        document.body.classList.remove("modal-open");
     }
 
     // Configura os cliques nas imagens de PROJECTS
@@ -40,15 +50,28 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    // Fecha o modal quando o usuário clicar no "x"
+    
+
+
+    // Fechar o modal quando o usuário clicar no "x"
     fecharBtn.addEventListener("click", function () {
-        modal.style.display = "none";
+        closeModal();
+        
     });
 
-    // Fecha o modal quando o usuário clicar fora da imagem
+    // Fechar modal quando aperta tecla Esc
+    document.addEventListener("keydown", (evento) =>{
+        if (evento.key === "Escape") {
+            closeModal();
+            
+        }
+    })
+
+    // Fechar o modal quando o usuário clicar fora da imagem
     window.addEventListener("click", function (evento) {
         if (evento.target === modal) {
-            modal.style.display = "none";
+            closeModal();
+            
         }
     });
 });
