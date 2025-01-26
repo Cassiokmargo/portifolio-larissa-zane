@@ -10,15 +10,20 @@
     padding-top: 60px;
 }
 
+
 .modal-content {
     display: flex; 
     background-color: rgba(30, 30, 30, 0.800);   
-    margin: 5% auto;
+    margin: 4rem auto;
     padding: 20px;    
     width: 100%; 
     position: relative;
     text-align: center;
     overflow: hidden; /* Para evitar que elementos ultrapassem os limites */
+}
+
+.modal-open {
+    overflow: hidden;
 }
 
 /* Imagem dentro do modal */

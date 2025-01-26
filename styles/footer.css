@@ -1,3 +1,5 @@
+
+
 .rodape {
     margin-top: 260px;
     margin-bottom: 120px;    
@@ -56,8 +58,8 @@
     color: var(--cor-fonte-main);
     font-family: var(--ff-texto);
     font-weight: var(--fw-titulo);
-    font-size: var(--fs-texto);
-
+    font-size: var(--fs-texto);    
+    
     padding: 0.2em;
 }
 
