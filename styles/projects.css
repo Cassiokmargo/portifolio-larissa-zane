@@ -20,4 +20,14 @@
     gap: 2.5em;
     width: 70%; 
     margin: 0 15% 0;
+    
+}
+
+.projetos__img {
+    border-radius: 4px;
+}
+
+.projetos__img:nth-child(7) {    
+    width: 341px;
+    height: 290px;
 }

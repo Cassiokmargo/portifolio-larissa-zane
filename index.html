@@ -4,43 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="styles/header.css">
-    <link rel="stylesheet" href="styles/sobre.css">
-    <link rel="stylesheet" href="styles/projects.css">
-    <link rel="stylesheet" href="styles/publications.css">
-    <link rel="stylesheet" href="styles/footer.css">
-    <link rel="stylesheet" href="styles/modal.css">
+    <link rel="stylesheet" href="reset.css">    
 
     <title>Larissa Zanetti</title>
 </head>
-<body class="">
+<body class="container_body">
     <header>
         <h2 class="card__nome">Larissa Zanetti</h2>
         <div class="card__menu_link">       
-            <a class="card__nome_link" href="index.html">En</a>
-            <a class="card__nome_link" href="index_pt_br.html">Pt-Br</a>
+            <a id="en-lang" class="card__nome_link" href="index.html">En</a>
+            <a id="pt-br-lang" class="card__nome_link" href="index_pt_br.html">Pt-Br</a>
         </div> 
         <section class="cabecalho">            
             <div class="container__menu">                
                 <img class="logo__imagem" src="assets/lirou elho header.svg" alt="logo da marca">
                 <ul class="menu__bar">
-                    <li class="item__menu"><a class="opcoes__link" href="#about">ABOUT</a></li>
-                    <li class="item__menu"><a class="opcoes__link" href="#projects">PROJECTS</a></li>
-                    <li class="item__menu"><a class="opcoes__link" href="#contact">CONTACT</a></li>
+                    <li class="item__menu"><a id="menu-about" class="opcoes__link" href="#about">ABOUT</a></li>
+                    <li class="item__menu"><a id="menu-projects" class="opcoes__link" href="#projects">PROJECTS</a></li>
+                    <li class="item__menu"><a id="menu-contact" class="opcoes__link" href="#contact">CONTACT</a></li>
                 </ul>
             </div>
         </section>     
     </header>
     <section class="secao__sobre" id="about">        
-        <h2 class="titulo__sobre">ABOUT</h2>
-        <p class="texto__sobre">My name is Larissa Zanetti Alves, I'm a illustrator and Designer from Espírito Santo, Brazil. I use digital art to create stories
+        <h2 id="about-titulo" class="titulo__sobre">ABOUT</h2>
+        <p id="about-texto1" class="texto__sobre">My name is Larissa Zanetti Alves, I'm a illustrator and Designer from Espírito Santo, Brazil. I use digital art to create stories
             and bring to life to characters and ideas. You may notice my inspirations in fantasy, japanese animations and videogames.
         </p>    
-        <p class="texto__sobre">My degree is in Design from Federal University of Espírito Santo. As a self-taught digital illustrator and game design 
+        <p id="about-texto2" class="texto__sobre">My degree is in Design from Federal University of Espírito Santo. As a self-taught digital illustrator and game design 
             enthusiast, I plan to continuously improve my artistic skills and expand my knowledge in other areas of game production.            
         </p>
-        <p class="texto__sobre subtexto"> 
+        <p id="about-subtexto" class="texto__sobre subtexto"> 
             You can find me on 
             <a class="texto__sobre ancora" href="https://www.linkedin.com/in/larissa-zanetti-alves-a81b63287/">Linkedin</a> 
             and <a class="texto__sobre ancora" href="https://www.behance.net/larissazanetti">Behance</a> 
@@ -48,10 +42,10 @@
     </section>
     <!-- Seção Projects -->
     <section class="secao__projetos" id="projects">
-        <div class="container__projetos">
-            <h2 class="titulo__projetos">PROJECTS</h2>
-            <div class="container__img">
-             <!-- <img class="projetos__img" src="assets/img/projects/loaf_cats_cover.png" alt="image do projeto Loaf cats">-->  
+        <!-- <div class="container__projetos">
+            <h2 id="titulo-projects" class="titulo__projetos">PROJECTS</h2>
+                <div class="container__img">
+                <img class="projetos__img" src="assets/img/projects/loaf_cats_cover.png" alt="image do projeto Loaf cats">  
                 <img class="projetos__img" src="assets/img/projects/Recipe.svg" alt="image do projeto recipe">
                 <img class="projetos__img" src="assets/img/projects/Cave.svg" alt="image do projeto cave">
                 <img class="projetos__img" src="assets/img/projects/Dungeon Meshi.svg" alt="image do projeto dungeon meshi">
@@ -59,45 +53,63 @@
                 <img class="projetos__img" src="assets/img/projects/Epidemia.svg" alt="image do projeto epidemia">
                 <img class="projetos__img" src="assets/img/projects/Lofi.svg" alt="image do projeto lofi">
             </div>
-        </div>
+        </div> --> 
     </section>
 
     <!-- Seção Publications -->
     <section class="secao__publications" id="publications">
-        <div class="container__publications">
-            <h2 class="titulo__projetos">PUBLICATIONS</h2>
+        <!--<div class="container__publications">
+            <h2 id="titulo-publications" class="titulo__projetos">PUBLICATIONS</h2>
             <div class="container__img">
                 <img class="projetos__img publications__img" 
                     src="assets/img/publications/Ilustras matemática.svg" 
                     alt="image do projeto Ilustras"
-                    data-description="Here are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.<br><br> If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. <br><br>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary.">
+                    data-description="Here are many variations of passages of Lorem Ipsum available,
+                     but the majority have suffered alteration in some form, 
+                     by injected humour, or randomised words which don't look even slightly believable.
+                     <br><br> If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't 
+                     anything embarrassing hidden in the middle of text. 
+                     <br><br>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary."
+                     data-modal="modal-1">
                 
                 <img class="projetos__img publications__img"
                     src="assets/img/publications/Jataí.svg"
                     alt="image do projeto Jataí"
-                    data-description="‘‘Jataí’’ is a published comic book, illustrated by me, about a species of bee native to Brazil. <br><br> This is a project created to teach children about our country's biodiversity and the importance of preserving local fauna. <br><br> The comic is available for free <span><a href='#'>here</a></span>.">                
+                    data-description="‘‘Jataí’’ is a published comic book, illustrated by me, 
+                    about a species of bee native to Brazil. <br><br> This is a project created to teach
+                    children about our country's biodiversity and the importance of preserving local fauna.
+                    <br><br> The comic is available for free <span><a href='#'>here</a></span>."
+                    data-modal="modal-2">                
                 
                 <img class="projetos__img publications__img" 
                     src="assets/img/publications/Acessibilidade.svg" 
                     alt="image do projeto Acessibilidade"
-                    data-description="The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. <br><br> Sections 1.10.32 and 1.10.33 from de Finibus Bonorum et Malorum by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.">                
+                    data-description="The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.
+                    <br><br> Sections 1.10.32 and 1.10.33 from de Finibus Bonorum et Malorum by Cicero
+                    are also reproduced in their exact original form, accompanied by English versions
+                    from the 1914 translation by H. Rackham."
+                    data-modal="modal-3">                
             </div>
-        </div>
+        </div> -->
     </section>
     <!-- Modal para exibir imagem maior -->
-    <div id="imageModal" class="modal">
-        <div class="modal-content">
-            <span class="close" aria-label="Botão fechar">&times;</span>
-            <img id="modalImage" class="modal-img" src="" alt="Imagem ampliada">
-            <div id="modalDescription" class="modal-description"></div>
-        </div>
-    </div>    
+    <section class="container-modal" id="modais">
+        <dialog id="imageModal" class="modal">
+            <div class="modal-content">
+                <span class="close" aria-label="Botão fechar">&times;</span>
+                <img id="modalImage" class="modal-img" src="" alt="Imagem ampliada">
+                <div id="modalDescription" class="modal-description"></div>
+            </div>
+        </dialog>  
+    </section>  
+
+    
     
     <footer class="rodape" id="contact">
         <div class="contato-bg">
-            <h2 class="titulo__rodape">CONTACT</h2>        
-            <p class="titulo__rodape subtitulo">I am currently working on personal projects and I am open to working as a freelancer on short or long-term projects as well as an employee.</p>
-            <p class="texto__rodape subtitulo2">Want to get in touch?</p>
+            <h2 id="contato-rodape" class="titulo__rodape">CONTACT</h2>        
+            <p id="subtitulo-rodape" class="titulo__rodape subtitulo">I am currently working on personal projects and I am open to working as a freelancer on short or long-term projects as well as an employee.</p>
+            <p id="question-rodape" class="texto__rodape subtitulo2">Want to get in touch?</p>
         </div>
         <p class="texto__rodape__final">Email adress: lazanettialves@gmail.com</p>
         <a class="texto__rodape__final ancora" href="https://www.linkedin.com/in/larissa-zanetti-alves-a81b63287/">Linkedin</a>
@@ -106,7 +118,10 @@
             <img class="logo__imagem__rodape" src="./assets/lirou elho full footer.svg" alt="img da logo do rodape">
         </div>
     </footer>
-    <script src="./javascript/script.js"></script>
-    <script src="./javascript/modal.js"></script>
+
+    <script src="./app/metodoExibirProjects.js"></script>
+    <script src="./app/metodoExibirPublications.js"></script>      
+    <script src="./app/modal.js"></script> 
+    
 </body>
 </html>

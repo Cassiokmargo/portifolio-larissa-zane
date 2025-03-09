@@ -1,0 +1,44 @@
+{
+    "container_projetos": {
+      "titulo_en": "PROJECTS",
+      "titulo_pt": "PROJETOS",
+      "imagens": [        
+        {
+          "classe": "projetos__img",
+          "src": "assets/img/projects/Recipe.svg",
+          "alt": "image do projeto recipe"
+        },
+        {
+          "classe": "projetos__img",
+          "src": "assets/img/projects/Cave.svg",
+          "alt": "image do projeto cave"
+        },
+        {
+          "classe": "projetos__img",
+          "src": "assets/img/projects/Dungeon Meshi.svg",
+          "alt": "image do projeto dungeon meshi"
+        },
+        {
+          "classe": "projetos__img",
+          "src": "assets/img/projects/Shingeki.svg",
+          "alt": "image do projeto shingeki"
+        },
+        {
+          "classe": "projetos__img",
+          "src": "assets/img/projects/Epidemia.svg",
+          "alt": "image do projeto epidemia"
+        },
+        {
+          "classe": "projetos__img",
+          "src": "assets/img/projects/Lofi.svg",
+          "alt": "image do projeto lofi"
+        },
+        {
+          "classe": "projetos__img",
+          "src": "assets/img/projects/loaf_cats_cover.png",
+          "alt": "image do projeto meia gatinho"
+        }
+      ]
+    }
+  }
+  

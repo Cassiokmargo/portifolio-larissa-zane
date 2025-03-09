@@ -4,16 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="styles/header.css">
-    <link rel="stylesheet" href="styles/sobre.css">
-    <link rel="stylesheet" href="styles/projects.css">
-    <link rel="stylesheet" href="styles/publications.css">
-    <link rel="stylesheet" href="styles/footer.css">
-    <link rel="stylesheet" href="styles/modal.css">
+    <link rel="stylesheet" href="reset.css">    
 
     <title>Larissa Zanetti</title>
 </head>
+<body class="container_body"> 
     <header>
         <h2 class="card__nome">Larissa Zanetti</h2>
         <div class="card__menu_link">       
@@ -45,12 +40,12 @@
             e <a class="texto__sobre ancora" href="https://www.behance.net/larissazanetti">Behance</a> 
         </p>
     </section>
-
+    <!-- Seção Projects -->
     <section class="secao__projetos" id="projects">
-        <div class="container__projetos">
+         <!-- <div class="container__projetos">
             <h2 class="titulo__projetos">PROJETOS</h2>
             <div class="container__img">
-             <!-- <img class="projetos__img" src="assets/img/projects/loaf_cats_cover.png" alt="image do projeto Loaf cats">-->  
+                <img class="projetos__img" src="assets/img/projects/loaf_cats_cover.png" alt="image do projeto Loaf cats">  
                 <img class="projetos__img" src="assets/img/projects/Recipe.svg" alt="image do projeto recipe">
                 <img class="projetos__img" src="assets/img/projects/Cave.svg" alt="image do projeto cave">
                 <img class="projetos__img" src="assets/img/projects/Dungeon Meshi.svg" alt="image do projeto dungeon meshi">
@@ -58,12 +53,12 @@
                 <img class="projetos__img" src="assets/img/projects/Epidemia.svg" alt="image do projeto epidemia">
                 <img class="projetos__img" src="assets/img/projects/Lofi.svg" alt="image do projeto lofi">
             </div>
-        </div>
+        </div>  -->
     </section>
 
-    <!-- Seção Publications -->
+    <!-- Seção Publications  -->
     <section class="secao__publications" id="publications">
-        <div class="container__publications">
+         <!-- <div class="container__publications">
             <h2 class="titulo__projetos">PUBLICAÇÕES</h2>
             <div class="container__img">
                 <img class="projetos__img publications__img" 
@@ -81,12 +76,12 @@
                     alt="image do projeto Acessibilidade"
                     data-description="The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. <br><br> Sections 1.10.32 and 1.10.33 from de Finibus Bonorum et Malorum by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.">                
             </div>
-        </div>
+        </div>  -->
     </section>
-    <!-- Modal para exibir imagem maior -->
+     <!-- Modal para exibir imagem maior  -->
     <div id="imageModal" class="modal">
         <div class="modal-content">
-            <span class="close">&times;</span>
+            <span class="close" aria-label="Botão fechar">&times;</span>
             <img id="modalImage" class="modal-img" src="" alt="Imagem ampliada">
             <div id="modalDescription" class="modal-description"></div>
         </div>
@@ -104,7 +99,11 @@
             <img class="logo__imagem__rodape" src="./assets/lirou elho full footer.svg" alt="img da logo do rodape">
         </div>
     </footer>
-    <script src="./javascript/script.js"></script>
-    <script src="./javascript/modal.js"></script>
+
+    <script src="./app/metodoExibirProjects.js"></script>
+    <script src="./app/metodoExibirPublications.js"></script>    
+    <script src="./app/modal.js"></script>    
+    
+    
 </body>
-</html>
+</html> 
