@@ -154,7 +154,7 @@
 @media screen and (max-width: 430px) {
     .modal-content {
         display: block;
-        margin-top: 40%;
+        margin-top: 150px;
         overflow: auto;
     }   
     
@@ -172,8 +172,7 @@
 @media screen and (max-width: 375px) {
     .modal-content {
         display: block;
-        overflow: auto;
-        margin-top: 50%;
+        overflow: auto;        
     }   
 
 }
