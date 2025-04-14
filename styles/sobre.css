@@ -40,6 +40,7 @@
 
 .ancora:hover {
     color: var(--cor-main);
+    transition: all 0.4s;
 }
 
 @media screen and (max-width: 768px) {

@@ -1,107 +1,111 @@
 header {
     position: relative;
-    width: 100%; /* Para ocupar toda a largura */
+    width: 100%;
+    /* Para ocupar toda a largura */
 
 }
 
 .cabecalho {
     display: flex;
-    justify-content: center;    
+    justify-content: center;
     /*border: 2px solid red;*/
 }
 
 .card__nome {
-    display:inline-block;
+    display: inline-block;
     justify-content: flex-end;
     width: 160px;
-    
+
     padding: 2.1em 1.2em 10px;
     margin-left: 3em;
-    
+
     font-family: 'Nexa';
     color: var(--cor-fonte-main);
     background: var(--cor-main);
-    
+
 }
 
-.card__menu_link {  
+.card__menu_link {
     position: absolute;
     padding-top: 1.5em;
     padding-right: 3em;
-    top: 0; 
-    right: 0; 
-    display: flex; 
-    gap: 0.3em;           
+    top: 0;
+    right: 0;
+    display: flex;
+    gap: 0.3em;
 }
 
-.card__nome_link{
-    text-decoration: none;    
+.card__nome_link {
+    text-decoration: none;
     font-family: 'Nexa';
-    padding: 0.3em;    
+    padding: 0.3em;
     color: var(--cor-fonte-main);
-    
+
 }
 
 /* Idioma menu */
-.card__nome_link:hover{
-    background: var(--cor-main);      
+.card__nome_link:hover {
+    background: var(--cor-main);
     border-radius: 4px;
+    transition: all 0.4s;
 }
 
 .container__menu {
-    display: flex;    
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding-top: 5.5em;
-    /*border: 2px solid rgb(0, 4, 255);*/
 }
 
-.logo__imagem {       
-    /*border: 2px solid rgb(0, 255, 55);*/
+.logo__imagem {
+
     width: 80px;
     padding-bottom: 2em;
-    
+
 }
 
 .menu__bar {
-    display: flex; 
+    display: flex;
     justify-content: center;
-    align-items: center;  
-    margin-left: 1.5em;  
-    gap: 1em;     
-    /*border: 2px solid red;*/    
+    align-items: center;
+    margin-left: 1.5em;
+    gap: 1em;
+
 }
 
-
-
-.item__menu {      
+.item__menu {
     font-family: var(--ff-titulo);
     font-weight: var(--fw-titulo);
     font-size: var(--fs-header);
 }
 
 .opcoes__link {
-   
-    color: var(--cor-fonte-main) ;
+
+    color: var(--cor-fonte-main);
     text-decoration: none;
     padding: 0.5em 1em;
+}
+
+.opcoes__link:hover {
+    transition: all 0.4s;
+    color: var(--cor-main);
 }
 
 
 @media screen and (max-width: 768px) {
     .card__nome {
-        margin-left: 7em;   
-        
-    }    
+        margin-left: 7em;
+
+    }
 
 }
 
 @media screen and (max-width: 430px) {
     .card__nome {
-        margin-left: 8em;   
-        
-    }    
+        margin-left: 8em;
+
+    }
 
     .card__menu_link {
         display: none;
@@ -112,9 +116,9 @@ header {
 
 @media screen and (max-width: 375px) {
     .card__nome {
-        margin-left: 7em;   
-        
-    }    
+        margin-left: 7em;
+
+    }
 
     .card__menu_link {
         display: none;

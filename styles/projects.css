@@ -31,3 +31,8 @@
     width: 341px;
     height: 290px;
 }
+
+.projetos__img:hover {
+    transition: all 0.4s;   
+    transform: scale(1.05);
+}
